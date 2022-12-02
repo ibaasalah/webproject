@@ -1,0 +1,111 @@
+body {
+			
+    background-color: antiquewhite; 
+
+
+}
+h1 {
+font-size:50px;
+color:rgb(78, 178, 32);
+text-decoration: underline; 
+font-style: none;
+}
+h2 {
+font-size:30px;
+color:rgb(78, 178, 32); 
+text-decoration: underline; 
+font-style: none;
+
+
+}	
+li {
+font-size:20px;
+}
+strong {
+color : rgb(10, 6, 6);
+}
+
+a:link {
+color: rgb(17, 8, 8) ;
+text-decoration: none;
+}
+
+a:funny {
+
+text-decoration: none;
+}
+
+a:excited {
+text-decoration: none;
+}
+
+a:quiat {
+text-decoration: none;
+}
+p::first-letter {
+    font-size: 150%;
+    font-weight:bold;
+    color:Black ;
+}
+
+
+.cssmarquee {
+height: 50px;	
+overflow: hidden;
+position: relative;
+}
+.cssmarquee h1 {
+position: absolute;
+width: 100%;
+height: 100%;
+margin: 0;
+line-height: 50px;
+text-align: left;
+/* Apply animation to this element */	
+-moz-animation: cssmarquee 7s linear infinite alternate;
+-webkit-animation: cssmarquee 5s linear infinite alternate;
+animation: cssmarquee 7s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes cssmarquee {
+0%   { -moz-transform: translateX(70%); }
+100% { -moz-transform: translateX(0%); }
+}
+
+@keyframes cssmarquee {
+0%   { 
+-moz-transform: translateX(70%); /* Firefox bug fix */
+-webkit-transform: translateX(70%); /* Firefox bug fix */
+transform: translateX(70%); 		
+}
+100% { 
+-moz-transform: translateX(0%); /* Firefox bug fix */
+-webkit-transform: translateX(0%); /* Firefox bug fix */
+transform: translateX(0%); 
+}
+}
+
+dl {
+display: block;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0;
+margin-right: 0;
+color: rgb(78, 178, 32)
+}
+dd{
+color : black ;
+font-size:15px;
+}
+dt{
+font-size:18px;
+font-weight:bold; 
+color : rgb(78, 178, 32) ;
+}
+
+
+ol {
+display: flex;
+flex-direction: column-reverse;
+
+}
